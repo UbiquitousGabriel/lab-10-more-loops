@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Floor</title>
+</head>
+<body>
+    <script>
+        var maxStories = 80;
+        var userFloor = parseInt(prompt("On what floor of the building is your office?"));
+        
+        while (userFloor > maxStories)
+        {
+            console.log("Unfortunately, " , userFloor , "is not one of the " , maxStories , " floors of this building. Try again.");
+            userFloor = parseInt(prompt("On what floor of the building is your office?"));
+        }
+
+console.log("Congrats! You work on floor: " , userFloor);
+    </script>
+</body>
+</html>
